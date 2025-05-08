@@ -11,8 +11,13 @@ import "../styles/global.css";
     <meta name="generator" content={Astro.generator} />
     <title>Astro Workshop</title>
   </head>
-  <body>
-    <slot />
+  <body class="flex flex-col gap-2">
+    <header class="bg-slate-800 px-2 py-4">
+      <a class="text-white text-2xl font-bold" href="/">Astro Workshop</a>
+    </header>
+    <main class="p-4">
+      <slot />
+    </main>
   </body>
 </html>
 
