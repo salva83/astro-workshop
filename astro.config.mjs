@@ -15,10 +15,7 @@ export default defineConfig({
   },
   env: {
     schema: {
-      MOVIES_URL: envField.string({
-        context: "server",
-        description: "server",
-      }),
+        // Define your environment variables here
       }
     }
   }
