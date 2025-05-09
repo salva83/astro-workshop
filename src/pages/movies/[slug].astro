@@ -26,6 +26,7 @@ const {Content} = await render(movie);
 
         <div class="grid grid-cols-[1fr_2fr] container mx-auto">
             <img
+                    transition:name={`movie-image-${slug}`}
                     src={image}
                     alt={`Poster of ${title}`}
             />

@@ -17,6 +17,7 @@ const { date, image, title, slug } = Astro.props;
                 src={image}
                 alt={title}
                 class="aspect-[9/16] object-contain max-h-[300px]"
+                transition:name={`movie-image-${slug}`}
 
         />
     </div>
