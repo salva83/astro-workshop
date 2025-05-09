@@ -12,5 +12,6 @@ TODO
 - [ ] Create Rate movie action
 - [ ] Create RandomMovieCard component
 - [ ] Create RandomMoviesList server island
-- [ ] Create Rating react client island
+- [ ] Add Preact integration
+- [ ] Create Rating Preact client island
 - [ ] Deploy!
