@@ -1,0 +1,24 @@
+---
+import {MOVIES_URL} from "astro:env/server";
+import RandomMovieCard from "./RandomMovieCard.astro";
+interface RandomMovieFrmApi
+{
+    id: string;
+    original_title: string;
+}
+
+const  randomMovies = await fetch("MOVIES_URL")
+    .then((res) => res.json())
+
+---
+
+<section>
+    {
+        randomMovies.map((movie: RandomMovieFrmApi) => (
+            <RandomMovieCard
+                id={movie.id}
+                name={movie.original_title}
+            />
+        ))
+    }
+</section>
