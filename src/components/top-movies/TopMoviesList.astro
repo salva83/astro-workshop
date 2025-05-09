@@ -1,0 +1,20 @@
+---
+import { getCollection } from "astro:content";
+import TopMovieCard from "./TopMovieCard.astro";
+
+const movies = await getCollection("movies");
+---
+
+<section class="grid grid-cols-4 gap-2">
+  {
+    movies.map((movie) => (
+      <TopMovieCard
+      title={movie.data.title}  
+      director={movie.data.director}
+      date={movie.data.date}
+        image={movie.data.image}
+        
+      />
+    ))
+  }
+</section>
