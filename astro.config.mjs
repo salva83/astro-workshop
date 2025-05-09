@@ -18,6 +18,6 @@ export default defineConfig({
         // Define your environment variables here
       }
     }
-  }
+
 
 });
