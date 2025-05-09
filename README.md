@@ -9,9 +9,10 @@ TODO
 - [ ] Create movie detail page
 - [ ] Add View Transitions
 - [ ] Configure env vars to use https://jsonfakery.com/movies/random/10
-- [ ] Create Rate movie action
 - [ ] Create RandomMovieCard component
-- [ ] Create RandomMoviesList server island
+- [ ] Create server island for RandomMoviesList
+- [ ] Change output to server and set prerendering to true in pages
 - [ ] Add Preact integration
 - [ ] Create Rating Preact client island
-- [ ] Deploy!
+- [ ] Create Rate movie action
+- [ ] Add an adapter and deploy!
