@@ -1,7 +1,7 @@
 
 ---
 import type { GetStaticPaths } from 'astro';
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import Layout from "../../layouts/Layout.astro";
 
 export const getStaticPaths = (async () => {
@@ -15,7 +15,7 @@ export const getStaticPaths = (async () => {
 
 const {movie} = Astro.props.movie;
 const { title, date, director, image } = movie.data;
-
+const {Content} = await render(movie);
 
 ---
 
@@ -36,4 +36,5 @@ const { title, date, director, image } = movie.data;
             </div>
         </div>
     </article>
+    <Content/>
 </Layout>
